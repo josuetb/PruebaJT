@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.card {
+    width: 200px; /* Ancho fijo */
+    height: 300px; /* Alto fijo (2/3 del ancho) */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.corner {
+    position: absolute;
+    font-size: 24px;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+    text-align: left;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    transform: rotate(180deg);
+}
+
+.center-suit{
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
